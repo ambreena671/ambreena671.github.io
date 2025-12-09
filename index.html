@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ambreena Portfolio</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background: #0a0a0a; color: white; }
+    .center-page { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
+    .hero-img { width: 220px; height: 220px; border-radius: 50%; object-fit: cover; border: 4px solid #4fc3f7; }
+    .enter-btn { margin-top: 20px; padding: 12px 26px; border: none; border-radius: 30px; font-size: 18px; background: #4fc3f7; cursor: pointer; transition: 0.3s; }
+    .enter-btn:hover { background: #0288d1; }
+
+    /* NAVBAR */
+    .navbar { width: 100%; padding: 15px 40px; display: flex; justify-content: space-between; align-items: center; background: #111; position: sticky; top: 0; }
+    .nav-links a { margin: 0 15px; text-decoration: none; color: white; font-size: 18px; }
+    .nav-links a:hover { color: #4fc3f7; }
+
+    section { padding: 60px; }
+    h2 { color: #4fc3f7; margin-bottom: 20px; }
+
+    /* CHATBOT */
+    #chatbot-box { position: fixed; bottom: 25px; right: 25px; width: 320px; background: #111; border: 2px solid #4fc3f7; border-radius: 12px; display: none; padding: 15px; }
+    #chat-toggle { position: fixed; bottom: 25px; right: 25px; padding: 14px 20px; border-radius: 50px; background: #4fc3f7; border: none; cursor: pointer; }
+  </style>
+</head>
+<body>
+
+<!-- FIRST PAGE -->
+<div id="firstPage" class="center-page">
+  <img src="your-image.jpg" class="hero-img" alt="Ambreena" />
+  <h1>Ambreena Munir</h1>
+  <button class="enter-btn" onclick="enterPortfolio()">Enter Portfolio</button>
+</div>
+
+<!-- MAIN PORTFOLIO -->
+<div id="portfolio" style="display:none;">
+  <div class="navbar">
+    <h2>Portfolio</h2>
+    <div class="nav-links">
+      <a href="#skills">Skills</a>
+      <a href="#certs">Certificates</a>
+      <a href="#intern">Internships</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+
+  <section id="skills">
+    <h2>Summary</h2>
+    <p>A motivated and detail-oriented Cybersecurity and Digital Forensics undergraduate with practical experience in vulnerability assessment, threat detection, cybercrime investigation, network monitoring, and digital forensics. Skilled in identifying and validating vulnerabilities, analyzing traffic, performing penetration testing, and supporting ethical hacking programs. Hands-on experience building a real-time NIDS, packet sniffer, and multilingual debugger. Currently interning internationally in advanced cybercrime investigation.</p>
+
+    <h2>Skills</h2>
+    <p>Cybersecurity • Vulnerability Assessment • Penetration Testing • Threat Detection • Incident Response • Evidence Acquisition • Metadata & Log Analysis • Wireless Security • Packet Inspection • NIDS Development</p>
+    <p><b>Tools:</b> Wireshark, Nmap, Burp Suite, Metasploit, Autopsy, FTK Imager</p>
+    <p><b>Programming:</b> Python (Scapy), Bash, basic C/C++ & Java</p>
+</section>
+
+  <section id="certs">
+    <h2>Certificates</h2>
+    <ul>
+      <li>Google Cybersecurity — Coursera</li>
+      <li>AI for Cybersecurity & Bug Hunting — Udemy</li>
+      <li>Introduction to Bug Bounty — Red Team Leaders</li>
+      <li>Introduction to Penetration Testing — Security Blue Team</li>
+      <li>Certified Ethical Hacker (CEH) — Cyberwing</li>
+      <li>Digital Forensic — Cyborts</li>
+      <li>OOSE — OPSWAT Academy</li>
+    </ul>
+</section>
+
+  <section id="intern">
+    <h2>Internships</h2>
+
+    <h3>Advanced Cybercrime Investigation Intern — ICDF (Nigeria, Remote) — 08/2025–Present</h3>
+    <ul>
+      <li>Assisting in cybercrime investigations, email forensics, fraud analysis.</li>
+      <li>Performing metadata extraction, log analysis, and artifact correlation.</li>
+      <li>Supporting case documentation and structured reporting.</li>
+      <li>Working with international teams on threat intelligence.</li>
+    </ul>
+
+    <h3>Cybersecurity Intern — Rhombix Technologies (Lahore) — 03/2025–05/2025</h3>
+    <ul>
+      <li>Tested for XSS, IDOR, CSRF, authentication issues.</li>
+      <li>Contributed to bug bounty submissions.</li>
+      <li>Developed Python automation scripts for security tasks.</li>
+    </ul>
+
+    <h3>Cybersecurity Intern — Shadowfox (India, Remote) — 04/2025</h3>
+    <ul>
+      <li>Executed penetration tests and vulnerability scans.</li>
+      <li>Monitored network anomalies and suspicious activity.</li>
+      <li>Prepared security findings and documentation.</li>
+    </ul>
+
+    <h2>Internship Assignments</h2>
+<p>Your internship assignments can be displayed here using PDF embed mode so visitors can view but NOT download.</p>
+
+<!-- Example: View‑Only PDF (no download button) -->
+<div style="border:2px solid #4fc3f7; border-radius:10px; padding:10px; margin-top:15px;">
+  <img src="assets/images.jpg"" class="hero-img" alt="Ambreena" />
+<iframe 
+    src="assets/2025268lj-ACI805-The Investigator's  Crucible.pdf"#toolbar=0&navpanes=0&scrollbar=0"
+    src="assets/20252026-ACI202-Ramon Abbas Case.pdf"#toolbar=0&navpanes=0&scrollbar=0"#toolbar=0&navpanes=0&scrollbar=0"
+    src="assets/20252026-ACI202-Ramon Abbas Case.pdf"#toolbar=0&navpanes=0&scrollbar=0"#toolbar=0&navpanes=0&scrollbar=0"
+
+    width="100%" 
+    height="600px" 
+    style="border:none;" 
+    oncontextmenu="return false;">
+</iframe>
+
+</div>
+</section>
+
+  <section id="projects">
+    <h2>Projects (GitHub: github.com/ambreena671)</h2>
+
+    <h3>NIDS-GUI – Network Intrusion Detection System</h3>
+    <p>Real-time Scapy + Streamlit NIDS using ML models, alert system, traffic logs, packet visualization, and malicious detection.</p>
+
+    <h3>Multilanguage Debugger Tool</h3>
+    <p>Debugger supporting Python, C/C++, Java with breakpoints, step execution, and variable inspection.</p>
+
+    <h3>Packet Sniffer</h3>
+    <p>Real-time network sniffer with protocol analysis, port inspection, and customizable filters.</p>
+</section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: ambreenamunir@gmail.com</p>
+  </section>
+</div>
+
+<!-- CHATBOT -->
+<button id="chat-toggle" onclick="toggleChatbot()">💬</button>
+<div id="chatbot-box">
+  <h3>Chatbot</h3>
+  <iframe src="https://chat.openai.com" width="100%" height="300px" style="border:none;"></iframe>
+</div>
+
+<script>
+  function enterPortfolio() {
+    document.getElementById("firstPage").style.display = "none";
+    document.getElementById("portfolio").style.display = "block";
+  }
+
+  function toggleChatbot() {
+    const bot = document.getElementById("chatbot-box");
+    bot.style.display = bot.style.display === "block" ? "none" : "block";
+  }
+</script>
+</body>
+</html>
